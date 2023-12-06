@@ -1,0 +1,1086 @@
+{
+  "compatibilityLevel": 1601,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"UM\",\"Actualisation\",\"PROD\",\"Table TMD\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.123.742.0 (23.11)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "fr-FR",
+    "cultures": [
+      {
+        "name": "fr-FR",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "18353e3c-520e-497d-8039-46a0ecdf10cb",
+        "fromColumn": "Date d'actualisation",
+        "fromTable": "Actualisation",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_f978de5c-d082-45d6-b6f8-8b861b52a4a6"
+      },
+      {
+        "name": "ed438901-31e5-4384-b312-8b67caa0fd10",
+        "fromColumn": "GMID",
+        "fromTable": "UM",
+        "toColumn": "ID_PROD",
+        "toTable": "PROD"
+      },
+      {
+        "name": "b6c9dfd1-f9b2-430d-b29d-87cdd309c4e0",
+        "fromColumn": "GMID",
+        "fromTable": "UM",
+        "toColumn": "Code Produit",
+        "toTable": "Table TMD"
+      }
+    ],
+    "sourceQueryCulture": "fr-FR",
+    "tables": [
+      {
+        "name": "UM",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "UM",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2fc55f71-5005-4bce-a698-a65f6a40c3cd",
+            "sourceColumn": "UM",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ID_TYPE_UM",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "616a782c-12e8-4fe9-888f-eed9cd1f8ede",
+            "sourceColumn": "ID_TYPE_UM",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GMID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6bc4e13c-1b18-4826-8664-bfe011883841",
+            "sourceColumn": "GMID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ID_VL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "85fabeda-689c-40a4-bada-ba9bf788555e",
+            "sourceColumn": "ID_VL",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LIB_UM",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f5de2705-0a5a-4a86-81a5-4b3d483ba7ff",
+            "sourceColumn": "LIB_UM",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PDS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "#,0",
+            "lineageTag": "e5bf1158-84be-4a68-91e3-9f3ad548a590",
+            "sourceColumn": "PDS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Unités",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "#,0",
+            "lineageTag": "ac2b065e-4f7b-4f51-b31c-644f2eca95d4",
+            "sourceColumn": "Unités",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ID_UM_MERE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f0e829b8-ff02-424d-a710-d82cc3d08bdf",
+            "sourceColumn": "ID_UM_MERE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ID_EMPL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b9174fca-8f4d-45a1-9221-707e5cf07cfe",
+            "sourceColumn": "ID_EMPL",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PROD_A_DETR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "37946f32-ae2d-4014-945c-02e44048afcd",
+            "sourceColumn": "PROD_A_DETR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DLV_DEPASSEE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "02481404-112f-464b-8b59-3cd80200b798",
+            "sourceColumn": "DLV_DEPASSEE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ID_CMPT_STK",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d9d96658-94f6-4010-89c4-43be98c29ea4",
+            "sourceColumn": "ID_CMPT_STK",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GERE_PAR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "17546e0b-2ec9-4d40-94e9-4d4fb4c549ca",
+            "sourceColumn": "GERE_PAR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WESADM.EMPL.ID_EMPL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "031c5b45-f4b1-4ca1-affb-3caa1e547c65",
+            "sourceColumn": "WESADM.EMPL.ID_EMPL",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Emplacement",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "36d5afed-041e-494b-b93a-fd33f8c00868",
+            "sourceColumn": "Emplacement",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WESADM.EMPL.WESADM.STRUCT(ID_STRUCT).ID_STRUCT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fb8e147a-9c18-4eb5-aa97-fc9e74686f6a",
+            "sourceColumn": "WESADM.EMPL.WESADM.STRUCT(ID_STRUCT).ID_STRUCT",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WESADM.EMPL.WESADM.STRUCT(ID_STRUCT).LIB_STRUCT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6d9ded2d-8ca6-4d5f-bf81-9d32bd801afd",
+            "sourceColumn": "WESADM.EMPL.WESADM.STRUCT(ID_STRUCT).LIB_STRUCT",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Zonage",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ccbdf326-7ed4-4297-a444-feb591af8e5f",
+            "sourceColumn": "Zonage",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Zone Température",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8d561578-0dda-460a-9820-170d618fd17d",
+            "sourceColumn": "Zone Température",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Texte avant le délimiteur",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bec7fa17-a7bf-41a6-ae6a-2c65d79f82b4",
+            "sourceColumn": "Texte avant le délimiteur",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Allée",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8f419d3e-ea2b-4392-ab01-dff3073f7876",
+            "sourceColumn": "Allée",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "f1c8558c-17ce-466c-a18d-01f09e5144f2",
+        "measures": [
+          {
+            "name": "Masse (kg)",
+            "expression": "SUMX('UM',UM[PDS]/1000)",
+            "formatString": "0.000",
+            "lineageTag": "d489c0ed-4d47-40b9-8871-0e8d2653af00"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "UM",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Oracle.Database(\"louxwspo.pharma.aventis.com:15190/LOUXWSP\", [HierarchicalNavigation=true]),",
+                "    WESADM = Source{[Schema=\"WESADM\"]}[Data],",
+                "    UM1 = WESADM{[Name=\"UM\"]}[Data],",
+                "    #\"Autres colonnes supprimées\" = Table.SelectColumns(UM1,{\"ID_UM\", \"ID_TYPE_UM\", \"ID_PROD\", \"ID_VL\", \"LIB_UM\", \"PDS\", \"QTE_UM\", \"ID_UM_MERE\", \"ID_EMPL\", \"PROD_A_DETR\", \"DLV_DEPASSEE\", \"ID_CMPT_STK\", \"GERE_PAR\", \"WESADM.EMPL\"}),",
+                "    #\"WESADM.EMPL développé\" = Table.ExpandRecordColumn(#\"Autres colonnes supprimées\", \"WESADM.EMPL\", {\"ID_EMPL\", \"LIB_EMPL\", \"WESADM.STRUCT(ID_STRUCT)\"}, {\"WESADM.EMPL.ID_EMPL\", \"WESADM.EMPL.LIB_EMPL\", \"WESADM.EMPL.WESADM.STRUCT(ID_STRUCT)\"}),",
+                "    #\"WESADM.EMPL.WESADM.STRUCT(ID_STRUCT) développé\" = Table.ExpandRecordColumn(#\"WESADM.EMPL développé\", \"WESADM.EMPL.WESADM.STRUCT(ID_STRUCT)\", {\"ID_STRUCT\", \"LIB_STRUCT\"}, {\"WESADM.EMPL.WESADM.STRUCT(ID_STRUCT).ID_STRUCT\", \"WESADM.EMPL.WESADM.STRUCT(ID_STRUCT).LIB_STRUCT\"}),",
+                "    #\"Lignes filtrées\" = Table.SelectRows(#\"WESADM.EMPL.WESADM.STRUCT(ID_STRUCT) développé\", each Text.StartsWith([#\"WESADM.EMPL.WESADM.STRUCT(ID_STRUCT).ID_STRUCT\"], \"S4RESF\") and [#\"WESADM.EMPL.WESADM.STRUCT(ID_STRUCT).ID_STRUCT\"] <> \"S4RESFILE0\"),",
+                "    #\"Colonne conditionnelle ajoutée\" = Table.AddColumn(#\"Lignes filtrées\", \"Zone Température\", each if Text.Contains([#\"WESADM.EMPL.WESADM.STRUCT(ID_STRUCT).ID_STRUCT\"], \"FROI\") then \"Zone +2+8°C\" else \"Zone 15-25°C\"),",
+                "    #\"Texte inséré avant le délimiteur\" = Table.AddColumn(#\"Colonne conditionnelle ajoutée\", \"Texte avant le délimiteur\", each Text.BeforeDelimiter([WESADM.EMPL.LIB_EMPL], \"-\"), type text),",
+                "    #\"Colonne conditionnelle ajoutée1\" = Table.AddColumn(#\"Texte inséré avant le délimiteur\", \"Personnalisé\", each if Text.StartsWith([Texte avant le délimiteur], \"F\") then 0 else [Texte avant le délimiteur]),",
+                "    #\"Type modifié\" = Table.TransformColumnTypes(#\"Colonne conditionnelle ajoutée1\",{{\"Personnalisé\", Int64.Type}}),",
+                "    #\"Colonnes renommées\" = Table.RenameColumns(#\"Type modifié\",{{\"Personnalisé\", \"Allée\"}}),",
+                "    #\"Colonne conditionnelle ajoutée2\" = Table.AddColumn(#\"Colonnes renommées\", \"Zonage\", each if [Allée] = 0 then \"Zone Froid\" else if [Allée] >= 15 then \"Hall1\" else \"Hall 2\"),",
+                "    #\"Lignes triées1\" = Table.Sort(#\"Colonne conditionnelle ajoutée2\",{{\"Allée\", Order.Descending}}),",
+                "    #\"Colonnes renommées1\" = Table.RenameColumns(#\"Lignes triées1\",{{\"ID_PROD\", \"GMID\"}, {\"ID_UM\", \"UM\"}, {\"WESADM.EMPL.LIB_EMPL\", \"Emplacement\"}, {\"QTE_UM\", \"Unités\"}})",
+                "in",
+                "    #\"Colonnes renommées1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_770df7a1-74ab-48ad-a782-9cb82ef70fb9",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "50665e00-0321-495a-9ef3-650c72aa28f9",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Année",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "36776840-e9c4-4d83-89b0-cf825e9493aa",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NoMois",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "f6a98ef3-7d38-4ea6-93fe-c607590fa587",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mois",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "b8f44ddb-4b3a-40ed-8e1a-aac841315fbf",
+            "sortByColumn": "NoMois",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NoTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NoMois] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "1cc19ce5-d834-4b8f-b1b9-99ef134ab69c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [NoTrimestre]",
+            "isHidden": true,
+            "lineageTag": "88ff2add-a768-4557-a59b-1cac81ac58aa",
+            "sortByColumn": "NoTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Jour",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "4e5537a9-7b59-4f18-8483-e7247fcc4139",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hiérarchie de dates",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Année",
+                "column": "Année",
+                "lineageTag": "3c57d767-8fd3-420f-843f-996118bb637a",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "d00b184a-4249-4a84-9528-33e976bbc2ac",
+                "ordinal": 1
+              },
+              {
+                "name": "Mois",
+                "column": "Mois",
+                "lineageTag": "827ba7bb-5e48-46f3-807d-fbb9534082c5",
+                "ordinal": 2
+              },
+              {
+                "name": "Jour",
+                "column": "Jour",
+                "lineageTag": "8265158c-b535-49ad-aa47-861fef306c68",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "a7e714ee-2cb0-415d-bf97-b2ada5a6afff"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "a3987040-f0e2-4586-9cae-0de07214f29e",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_770df7a1-74ab-48ad-a782-9cb82ef70fb9",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Actualisation",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date d'actualisation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "lineageTag": "800121fb-9355-4240-b7f9-55c3183a5c3b",
+            "sourceColumn": "Date d'actualisation",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Hiérarchie de dates",
+                  "table": "LocalDateTable_f978de5c-d082-45d6-b6f8-8b861b52a4a6"
+                },
+                "isDefault": true,
+                "relationship": "18353e3c-520e-497d-8039-46a0ecdf10cb"
+              }
+            ]
+          }
+        ],
+        "lineageTag": "a8e9be06-df3f-41c7-bfe0-d1e0d68a9913",
+        "partitions": [
+          {
+            "name": "Actualisation",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = DateTime.LocalNow(),",
+                "    #\"Converti en table\" = #table(1, {{Source}}),",
+                "    #\"Colonnes renommées\" = Table.RenameColumns(#\"Converti en table\",{{\"Column1\", \"Date d'actualisation\"}}),",
+                "    #\"Type modifié\" = Table.TransformColumnTypes(#\"Colonnes renommées\",{{\"Date d'actualisation\", type datetime}})",
+                "in",
+                "    #\"Type modifié\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_f978de5c-d082-45d6-b6f8-8b861b52a4a6",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "0ed57942-f72b-4f33-b787-1d831157841d",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Année",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "746c83fb-c6df-48f5-81a3-fa68e4c86f05",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NoMois",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "2de9270c-0c9c-457f-9834-5c9a0f073408",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mois",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "14ba4a48-9b57-4744-a61f-6a57d14e457b",
+            "sortByColumn": "NoMois",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NoTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NoMois] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "7c9898ad-9884-473c-89c5-148b0cf6db7d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [NoTrimestre]",
+            "isHidden": true,
+            "lineageTag": "f8a36058-3168-4863-afc5-8430928fe2c6",
+            "sortByColumn": "NoTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Jour",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "5bb7ac6e-c1a5-4bc6-ba9f-c2d31c282f95",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hiérarchie de dates",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Année",
+                "column": "Année",
+                "lineageTag": "30ac9d76-9b8b-4190-8c69-24e2cd23bd83",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "80fa9bb5-53f0-41e9-be99-0539e4553281",
+                "ordinal": 1
+              },
+              {
+                "name": "Mois",
+                "column": "Mois",
+                "lineageTag": "c3e2fe86-f9f3-47f5-8796-0456327ab25a",
+                "ordinal": 2
+              },
+              {
+                "name": "Jour",
+                "column": "Jour",
+                "lineageTag": "49704c4a-6f56-4901-b612-ab76da21ca41",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "037d89a3-4c5d-4ca7-9a6d-1205081f6ad1"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "9ff6b441-53c1-4faf-85b4-f4ca5b9304c0",
+        "partitions": [
+          {
+            "name": "LocalDateTable_f978de5c-d082-45d6-b6f8-8b861b52a4a6",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Actualisation'[Date d'actualisation])), 1, 1), Date(Year(MAX('Actualisation'[Date d'actualisation])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "PROD",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ID_PROD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "57f813c2-6fda-4bfb-810b-bd10ff232f8c",
+            "sourceColumn": "ID_PROD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LIB_PROD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "906f936f-5259-4c23-beae-98ba836437f6",
+            "sourceColumn": "LIB_PROD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ID_CONTR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "775e075d-411d-4b39-9b48-5f37850078d1",
+            "sourceColumn": "ID_CONTR",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WESADM.CONTR.LIB_CONTR",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f6de96aa-63f3-4338-9122-6e957b60af46",
+            "sourceColumn": "WESADM.CONTR.LIB_CONTR",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "a81d16e7-b514-4c13-9b16-ebffa75ab6d7",
+        "partitions": [
+          {
+            "name": "PROD",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Oracle.Database(\"louxwspo.pharma.aventis.com:15190/LOUXWSP\", [HierarchicalNavigation=true]),",
+                "    WESADM = Source{[Schema=\"WESADM\"]}[Data],",
+                "    PROD1 = WESADM{[Name=\"PROD\"]}[Data],",
+                "    #\"Autres colonnes supprimées\" = Table.SelectColumns(PROD1,{\"ID_PROD\", \"ID_CONTR\", \"LIB_PROD\", \"WESADM.CONTR\"}),",
+                "    #\"Lignes filtrées\" = Table.SelectRows(#\"Autres colonnes supprimées\", each ([ID_CONTR] = 6 or [ID_CONTR] = 7)),",
+                "    #\"WESADM.CONTR développé\" = Table.ExpandRecordColumn(#\"Lignes filtrées\", \"WESADM.CONTR\", {\"LIB_CONTR\"}, {\"WESADM.CONTR.LIB_CONTR\"})",
+                "in",
+                "    #\"WESADM.CONTR développé\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Table TMD",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Code Produit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f0a62142-c18a-4029-9678-6a375fb5e772",
+            "sourceColumn": "Code Produit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Libellé Produit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f69ae613-9455-46f0-b17b-b554a5b206b4",
+            "sourceColumn": "Libellé Produit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Etat SLB",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ad448d8d-e94a-492c-b7b4-b8b82c720b33",
+            "sourceColumn": "Etat SLB",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "N°UN",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3ea993d0-5313-4def-961e-e5f2b9145e40",
+            "sourceColumn": "N°UN",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CLASSE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b987f575-0bf5-4dac-99a2-08bcf2f82f11",
+            "sourceColumn": "CLASSE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a337d9ca-4a3a-460b-8b29-66b0e98ddd87",
+            "sourceColumn": "GE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Désignation français",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "57c94172-c755-4f23-9c13-3194250552f4",
+            "sourceColumn": "Désignation français",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "9be2ed0b-b23b-4580-9413-727f4db1dde2",
+        "partitions": [
+          {
+            "name": "Table TMD",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"tdRLbqMwGADgq1isWimK/MDGXqLWyTAlNGJoFSnqgiZERcPgFKhU9UTtOXKxsYGqJGRmUcHm9wLJH//L67XlYEYEtCbW3A2vZeD6AEG4mAMMr5ZgFuoP7qZKd/ok2Bb6YFOko+d5Oi4OH9t0E/9J8gqUKku3CajUa/r8kkxAPo2n5RRc7J+SXD3GxWNaxdml9TBZW8xhhHdJXJMzH3jBT/BjNaZLuq7dYe8jOZZrasxFF6YGJhCMV2PiIFj3dRnezmTgXbd91VGjA9X4JqnUvlC7JP9COe+jZKhhOgWRgxFhfZDCtqve/fdynXTtUutnkmXcFrRvM3exbOwFOJYRp+g/cqa98/Tvlj6850mD2xASKLo4bbZ2Lv27UUrNqKBHoL9s9xbZurtDrc8pqxOF7F/uaMkijDk0vQ09/y6SN011KRsw0TDNXt5U9tlPRCEygxy5q9tIhhIgVudoBul4iJBj1prUmA6yeopzlbUPje0Is39R6AYrGehbmvXThTq5xambyT9v+dX85UYVhSrT3dfoXWWqiN8OH/u4SsA23asqLkuTSfPf2KGQka6I6znkRuyVaiiVCEdgu6eaWtHZiK5NmK7w+Yd8+Ff84S8=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#\"Code Produit\" = _t, #\"Libellé Produit\" = _t, #\"Etat SLB\" = _t, #\"N°UN\" = _t, CLASSE = _t, GE = _t, #\"Désignation français\" = _t]),",
+                "    #\"Type modifié\" = Table.TransformColumnTypes(Source,{{\"Code Produit\", Int64.Type}, {\"Libellé Produit\", type text}, {\"Etat SLB\", type text}, {\"N°UN\", Int64.Type}, {\"CLASSE\", type text}, {\"GE\", type text}, {\"Désignation français\", type text}})",
+                "in",
+                "    #\"Type modifié\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

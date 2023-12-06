@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "UM",
+          "nodeLineageTag": "f1c8558c-17ce-466c-a18d-01f09e5144f2",
+          "size": {
+            "height": 719,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 592.389024390244,
+            "y": 28.837804878048786
+          },
+          "nodeIndex": "Actualisation",
+          "nodeLineageTag": "a8e9be06-df3f-41c7-bfe0-d1e0d68a9913",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 363.46707317073174,
+            "y": 197.65975609756097
+          },
+          "nodeIndex": "PROD",
+          "nodeLineageTag": "a81d16e7-b514-4c13-9b16-ebffa75ab6d7",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 367.70609756097576,
+            "y": 535.41097560975618
+          },
+          "nodeIndex": "Table TMD",
+          "nodeLineageTag": "9be2ed0b-b23b-4580-9413-727f4db1dde2",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 4
+        }
+      ],
+      "name": "Toutes les tables",
+      "zoomValue": 94.361334867663984,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Toutes les tables",
+  "defaultDiagram": "Toutes les tables"
+}
